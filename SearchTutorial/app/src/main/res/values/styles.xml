@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorLightBlack</item>
+        <item name="colorPrimaryDark">@color/colorLightBlack</item>
+        <item name="colorAccent">@color/colorLightBlack</item>
+    </style>
+    
+    <style name="AppTheme.CustomThemeForPostCodeSearch" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="AppTheme.CustomThemeForPhoneNumberSearch" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/colorBackgrooundPopup</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="DialogeTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/colorDarkGrey</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="scrollBarStyle">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbVertical">@mipmap/ic_arrowdown</item>
+    </style>
+
+</resources>

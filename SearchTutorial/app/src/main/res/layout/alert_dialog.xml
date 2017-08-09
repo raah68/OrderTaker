@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertDialog_phoneNumber"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity=""
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_customerName"
+            android:text="Customer Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_customerName"
+            android:hint="Customer Name"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_customerPhoneNumber"
+            android:text="Phone Number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_customerPhoneNumber"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_doorNumber"
+            android:text="Door Number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_doorNumber"
+            android:hint="Door Number"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_buildingName"
+            android:text="Building Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_buildingName"
+            android:hint="Building Name"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_streetName"
+            android:text="Street Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_streetName"
+            android:hint="Street Name"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_townName"
+            android:text="Town Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_townName"
+            android:hint="Town Name"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_postCode"
+            android:text="Post Code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_postCode"
+            android:hint="Post Code"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txv_instruction"
+            android:text="Any Instruction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:paddingStart="15dp"/>
+        <EditText
+            android:id="@+id/edt_instruction"
+            android:hint="Any Instruction"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+</LinearLayout>

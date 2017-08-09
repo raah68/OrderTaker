@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raah.orderpos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="OrderPOS"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".OrderPOSMainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- PhoneNumberSearchActivity -->
+        <activity
+            android:name=".PhoneNumberSearchActivity"
+            android:label="Search by phone number"
+            android:theme="@style/AppTheme.CustomThemeForPostCodeSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchablephonenumber" />
+        </activity>
+
+        <provider
+            android:name="com.raah.customcontentprovider.PhoneNumberSearchProvider"
+            android:authorities="com.raah.orderpos.phonenumbersuggestion"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- PostCodeSearchActivity -->
+        <activity
+            android:name=".PostCodeSearchActivity"
+            android:label="Search by post code"
+            android:theme="@style/AppTheme.CustomThemeForPostCodeSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchablepostcode" />
+        </activity>
+
+        <provider
+            android:name="com.raah.customcontentprovider.PostCodeSearchProvider"
+            android:authorities="com.raah.orderpos.postcodesuggestion"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".OrderMonitor"></activity>
+    </application>
+
+</manifest>

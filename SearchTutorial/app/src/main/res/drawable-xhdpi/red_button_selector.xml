@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient  android:startColor="#f63e3c" android:centerColor="#d13938" android:endColor="#b02e2e" android:angle="90" />
+            <corners android:radius="5dp"/>
+            <stroke android:width="2dp" android:color="#722121"/>
+            <padding android:left="15dp" android:top="5dp" android:right="15dp" android:bottom="5dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient  android:startColor="#b02e2e" android:centerColor="#d13938" android:endColor="#f63e3c" android:angle="90" />
+            <corners android:radius="5dp"/>
+            <stroke android:width="4dp" android:color="#722121"/>
+            <padding android:left="15dp" android:top="5dp" android:right="15dp" android:bottom="5dp"/>
+        </shape>
+    </item>
+</selector>

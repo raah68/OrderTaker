@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!--Left side panel-->
+    <LinearLayout
+        android:id="@+id/layout_leftPanel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+            <ListView
+                android:id="@+id/lstv_Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ListView>
+    </LinearLayout>
+    <!--Right side panel-->
+    <LinearLayout
+        android:id="@+id/layout_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@color/colorBackground">
+
+<!--        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+            &lt;!&ndash;menu fragment&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/linearLayout_Menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+        </FrameLayout>-->
+
+    </LinearLayout>
+</LinearLayout>

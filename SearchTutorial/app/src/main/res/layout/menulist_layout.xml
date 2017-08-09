@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="20dp">
+        <TextView
+            android:layout_width="@dimen/menuListDimen"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="MENU"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:scrollbarThumbVertical="@drawable/bar"
+            android:scrollbarTrackVertical="@drawable/scrollbararrow"
+            android:verticalScrollbarPosition="left">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_starters"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Starters"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_St"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_TandooriDish"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Tandoori Dish"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Tan"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_HouseSpecial"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="House Special"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Hosp"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_RedGreenCurry"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Red/Green Curry"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_RedGreen"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Moilee"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Moilee"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Moil"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Makhani"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Makhani"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Makh"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Passanda"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Passanda"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Pass"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Masala"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Masala"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Mas"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Korai"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Korai"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Kor"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Achari"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Achari"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Ach"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Balti"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Balti"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Bal"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Rezala"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Rezala"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Rez"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Jalfrezi"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Jalfrezi"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Jal"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_GarlicChilli"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Garlic Chilli"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Garl"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Curry"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Curry"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Cur"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Korma"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Korma"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Korm"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Kashmir"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Kashmir"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Kash"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Bhuna"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Bhuna"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Bhun"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Dupiaza"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Dupiaza"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Dup"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Palek"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Palek"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Pal"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Rogan"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Rogan"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Rog"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Dhansak"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Dhansak"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Dhan"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Pathia"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Pathia"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Pat"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Madras"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Madras"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Mad"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Vindaloo"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Vindaloo"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Vind"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Biryani"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Biryani"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Bir"
+                        android:layout_width="@dimen/menuSelectorHeight"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_VegetableSideDish"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Veg Side Dish"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Veg"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Rice"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Rice"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Ric"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Breads"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Breads"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Bre"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Sundries"
+                        android:layout_width="@dimen/menuListDimen"
+                        android:layout_height="@dimen/menuButtonHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:onClick="changeFragment"
+                        android:text="Sundries"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_Sun"
+                        android:layout_width="39dp"
+                        android:layout_height="@dimen/menuSelectorHeight"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/arrow"
+                        android:onClick="changeFragment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

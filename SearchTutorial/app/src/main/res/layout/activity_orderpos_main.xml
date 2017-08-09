@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!--Admin Button Layout-->
+    <LinearLayout
+        android:id="@+id/layout_adminButtons"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp">
+            <include
+                android:id="@+id/button_admin"
+                layout="@layout/adminbutton_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+    <!--Menu List Buttons Layout-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:background="@color/colorBackground"
+        android:gravity="end">
+
+        <include
+            android:id="@+id/button_menuList"
+            layout="@layout/menulist_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+<!--Menu layout-->
+    <LinearLayout
+        android:id="@+id/layout_menuLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+            <!--menu fragment-->
+            <LinearLayout
+                android:id="@+id/linearLayout_Menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+        </FrameLayout>
+    </LinearLayout>
+    <!--Receipt Layout-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:orientation="vertical"
+        android:background="@color/colorSlightWhite">
+        <!--shopping list-->
+        <LinearLayout
+            android:id="@+id/linearLayout_Receipt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <!--Business Address-->
+            <LinearLayout
+                android:id="@+id/layout_displayAddress"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txv_displayBusinessAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txv_deliveryOrInside"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txv_inOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <!--Line separator-->
+            <LinearLayout
+                android:id="@+id/LL_Separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorOlive"
+                android:orientation="vertical" >
+            </LinearLayout>
+            <!--List display view-->
+            <ListView
+                android:id="@+id/lstv_shoppingList"
+                android:layout_width="530dp"
+                android:layout_height="435dp">
+            </ListView>
+            <!--Footer view-->
+            <LinearLayout
+                android:id="@+id/layout_footer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:padding="1dp">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

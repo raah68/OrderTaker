@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outside border/shadow -->
+    <item android:top="3dp" android:left="3dp" android:right="3dp" android:bottom="3dp">
+        <shape android:shape="oval">
+            <size android:width="200dp" android:height="200dp" />
+            <solid android:color="@color/colorDarkGrey"/>
+        </shape>
+    </item>
+    <!-- Inset -->
+    <item android:top="3dp" android:left="3dp" android:right="4dp" android:bottom="4dp" >
+        <shape android:shape="oval">
+            <solid android:color="@color/colorOrange"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="ADMIN"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/green_button_selector"
+        android:onClick="startSearchPopUpWindow"
+        android:text="Delivery"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_collection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/orange_button_selector"
+        android:onClick="setCollectionOnReceipt"
+        android:text="Collection"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_tableNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/midnightblue_button_selector"
+        android:onClick="setTableNumber"
+        android:text="Table Number"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/midnightblue_button_selector"
+        android:text="Print"
+        android:onClick="printDocument"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+</LinearLayout>
