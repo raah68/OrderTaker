@@ -27,6 +27,7 @@ import com.raah.customobjects.CustomerAddress;
 import com.raah.customobjects.GlobalMethods;
 import com.raah.customobjects.Product;
 import com.raah.customobjects.ReceiptObj;
+import com.raah.databasehandler.CopyDatabaseToBaseDB;
 import com.raah.fragraments.MenuFragment;
 
 //import android.app.Fragment;
@@ -59,6 +60,10 @@ public class OrderPOSMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Copy the database
+        CopyDatabaseToBaseDB test = new CopyDatabaseToBaseDB();
+        test.copyDatabase(this);
+
         super.onCreate(savedInstanceState);
         mainContext = getApplicationContext();
         setContentView(R.layout.activity_orderpos_main);

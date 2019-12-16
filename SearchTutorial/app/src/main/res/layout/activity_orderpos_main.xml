@@ -5,8 +5,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="false"
-    android:orientation="horizontal">
+    android:baselineAligned="false">
 
     <!--Admin Button Layout-->
     <LinearLayout
@@ -14,23 +13,25 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.4"
-        android:orientation="vertical"
-        android:background="@color/colorBackground">
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="1dp"
             android:layout_marginEnd="1dp">
+
             <include
                 android:id="@+id/button_admin"
                 layout="@layout/adminbutton_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </ScrollView>
     </LinearLayout>
     <!--Menu List Buttons Layout-->
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="0.65"
         android:background="@color/colorBackground"
@@ -40,10 +41,10 @@
             android:id="@+id/button_menuList"
             layout="@layout/menulist_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
-<!--Menu layout-->
+    <!--Menu layout-->
     <LinearLayout
         android:id="@+id/layout_menuLayout"
         android:layout_width="0dp"
@@ -61,7 +62,7 @@
                 android:id="@+id/linearLayout_Menu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"/>
+                android:orientation="vertical" />
         </FrameLayout>
     </LinearLayout>
     <!--Receipt Layout-->
@@ -69,21 +70,22 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1.4"
-        android:orientation="vertical"
-        android:background="@color/colorSlightWhite">
+        android:background="@color/colorSlightWhite"
+        android:orientation="vertical">
         <!--shopping list-->
         <LinearLayout
             android:id="@+id/linearLayout_Receipt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="vertical">
             <!--Business Address-->
             <LinearLayout
                 android:id="@+id/layout_displayAddress"
                 android:layout_width="match_parent"
                 android:layout_height="85dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/txv_displayBusinessAddress"
                     android:layout_width="match_parent"
@@ -91,6 +93,7 @@
                     android:gravity="center"
                     android:textSize="13sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/txv_deliveryOrInside"
                     android:layout_width="match_parent"
@@ -98,12 +101,13 @@
                     android:gravity="center"
                     android:textSize="13sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/txv_inOut"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
-                    android:textStyle="bold"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:textStyle="bold" />
             </LinearLayout>
             <!--Line separator-->
             <LinearLayout
@@ -111,22 +115,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorOlive"
-                android:orientation="vertical" >
-            </LinearLayout>
+                android:orientation="vertical"></LinearLayout>
             <!--List display view-->
             <ListView
                 android:id="@+id/lstv_shoppingList"
                 android:layout_width="530dp"
-                android:layout_height="435dp">
-            </ListView>
+                android:layout_height="435dp"></ListView>
             <!--Footer view-->
             <LinearLayout
                 android:id="@+id/layout_footer"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:orientation="vertical"
-                android:padding="1dp">
-            </LinearLayout>
+                android:padding="1dp"></LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
